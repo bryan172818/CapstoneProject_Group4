@@ -14,6 +14,7 @@ import java.io.File;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+
 public class DumbBellFlyesController implements Initializable {
     @FXML
     private MediaView mediaView;
@@ -30,7 +31,7 @@ private Button ResetButton;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        // Replace the file path with the path to your video file
+        
     	
         file = new File("C:\\Users\\alex3\\Downloads\\pexels-rodnae-productions-8402113 (Original).mp4");
         media = new Media(file.toURI().toString());

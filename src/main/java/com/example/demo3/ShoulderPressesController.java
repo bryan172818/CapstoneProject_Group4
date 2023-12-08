@@ -15,6 +15,8 @@ import java.io.File;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+//Dead Class!!!!!!!!!!!!!!
+
 public class ShoulderPressesController implements Initializable {
     @FXML
     private MediaView mediaView;
@@ -23,6 +25,7 @@ public class ShoulderPressesController implements Initializable {
     private Media media;
     private MediaPlayer mediaPlayer;
 
+    
 
 @FXML
 private Button PauseButton;
@@ -31,7 +34,7 @@ private Button ResetButton;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        // Replace the file path with the path to your video file
+      
     	
         file = new File("C:\\Users\\alex3\\Downloads\\vecteezy_young-man-hand-holding-dumbbell-up-exercises-at-gym-fitness_1806315.mov");
         media = new Media(file.toURI().toString());

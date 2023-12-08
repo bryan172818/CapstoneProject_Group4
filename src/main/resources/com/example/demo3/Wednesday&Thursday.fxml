@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.LoginController">
+   <children>
+      <Label layoutX="214.0" layoutY="27.0" text="Weekly Routine:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="73.0" layoutY="98.0" text="Wednesday" />
+      <Label layoutX="300.0" layoutY="98.0" text="Thursday" />
+      <TextArea editable="false" layoutX="22.0" layoutY="125.0" prefHeight="200.0" prefWidth="200.0" text="Shoulder 4 sets x 10 reps,&#10;Lateral raises 4 set x 12 reps,&#10;Front raises 3 sets x 10 reps,&#10;Upright rows 3 sets x 11 reps&#10;&#10;Take a 1 minute break in between&#10;sets." />
+      <TextArea editable="false" layoutX="262.0" layoutY="125.0" prefHeight="200.0" prefWidth="200.0" text="Deadlifts 4 sets x 8 reps&#10;Bent over rows 4 sets x 8 reps&#10;Lat pull-downs 3 sets x 10 reps&#10;Seated cable rows 4 sets x 10 reps&#10;&#10;Take a 1 minute break in between &#10;sets." />
+      <Button fx:id="backToWorkoutPlansButton" layoutX="495.0" layoutY="342.0" mnemonicParsing="false" onAction="#handleBackToWorkoutPlansButton" onMouseClicked="#handleBackToWorkoutPlansButton" text="Go Back" textFill="#6f4ff2" />
+   </children>
+</AnchorPane>

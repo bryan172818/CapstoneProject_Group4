@@ -1,4 +1,54 @@
 
+package com.example.demo3;
+
+
+import java.util.ArrayList;
+import java.util.List;
+
+
+//This class was barely used
+class Exercise {
+    private String name;
+    private String description;
+
+    public Exercise(String name, String description) {
+        this.name = name;
+        this.description = description;
+    }
+    
+    public String getName() {
+        return name;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    @Override
+    public String toString() {
+        return "Exercise: " + name + "\nDescription: " + description;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*
 

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<!-- activity_log.fxml -->
+
+<VBox xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.ActivityLogController">
+
+
+    <!-- Label for the list of logged activities -->
+    <Label text="Activity Log" />
+
+    <!-- ListView to display logged activities -->
+    <ListView fx:id="activityLogListView" prefHeight="300" />
+
+    <!-- Input fields for exercise details -->
+    <Label text="Exercise Name" />
+    <TextField fx:id="exerciseNameTextField" />
+    
+    <Label text="Duration (minutes)" />
+    <TextField fx:id="durationTextField" />
+    
+    <Label text="Distance (miles)" />
+    <TextField fx:id="distanceTextField" />
+
+    <!-- Button to add exercise to the log -->
+    <Button onAction="#logExercise" text="Log Exercise" />
+   <Button fx:id="TrackWorkout" mnemonicParsing="false" onAction="#viewWorkouts" onMouseClicked="#viewWorkouts" text="Button" />
+
+    <!-- Button to go back to the main menu or another page -->
+    <Button onAction="#goBack" text="Back" />
+
+</VBox>

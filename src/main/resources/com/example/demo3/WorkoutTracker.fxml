@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<!-- WorkoutTracker.fxml -->
+
+<AnchorPane fx:id="mainPane" prefHeight="443.0" prefWidth="310.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.WorkoutTrackerController">
+    <!-- Create a VBox to hold the label and the ListView -->
+    <VBox AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <!-- Label for the list of logged workouts -->
+        <Label text="Workout Tracker" />
+     <ListView fx:id="workoutListViews" prefHeight="275.0" prefWidth="310.0" />
+     
+        <!-- Create another VBox to separate the label from the ListView -->
+        <VBox prefHeight="39.0" prefWidth="310.0" />
+         <!-- Button to go back to the main menu or another page -->
+         <Button onAction="#goBack" text="Back" />
+    </VBox>
+</AnchorPane>

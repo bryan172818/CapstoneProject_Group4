@@ -14,6 +14,8 @@ import java.io.File;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+
+
 public class LungesController implements Initializable {
     @FXML
     private MediaView mediaView;
@@ -30,7 +32,7 @@ private Button ResetButton;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        // Replace the file path with the path to your video file
+      
     	
         file = new File("C:\\Users\\alex3\\Downloads\\production_id_5025833 (1080p).mp4");
         media = new Media(file.toURI().toString());

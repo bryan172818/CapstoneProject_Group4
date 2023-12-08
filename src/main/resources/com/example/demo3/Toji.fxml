@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.LoginController">
+   <children>
+      <TextArea editable="false" layoutX="50.0" layoutY="128.0" prefHeight="200.0" prefWidth="200.0" text="Flat Bench Press &#10;4 sets x 12 reps&#10;&#10;Incline Dumbell Flys&#10;3 sets x 10 reps&#10;&#10;Tricep Cable Pushdowns with Rope&#10;3 sets 10 reps&#10;&#10;Dips&#10;3 sets 12 reps&#10;" />
+      <TextArea layoutX="305.0" layoutY="128.0" prefHeight="200.0" prefWidth="200.0" text="Back Squats&#10;4 sets x 12 reps,&#10;&#10;Weighted Lunges&#10;3 sets x 10 reps&#10;&#10;Seated Arnold Press&#10;3 sets x 10 reps&#10;&#10;Push-ups &#10;3 sets x 20 reps" />
+      <Button fx:id="backToWorkoutPlansButton" layoutX="505.0" layoutY="352.0" mnemonicParsing="false" onAction="#handleBackToWorkoutPlansButton" onMouseClicked="#handleBackToWorkoutPlansButton" text="Go Back" textFill="#6f4ff2" />
+      <Label layoutX="170.0" layoutY="33.0" text="Toji's Routine:">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

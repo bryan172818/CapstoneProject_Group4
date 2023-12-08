@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.LoginController">
+   <children>
+      <Label layoutX="23.0" layoutY="107.0" prefHeight="20.0" prefWidth="154.0" text="Nutritional Information" textFill="#2ab43c">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="219.0" layoutY="23.0" text="Our Website" textFill="#00991c">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Label>
+      <Text layoutX="123.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To learn about Nutritional information and more visit our website" wrappingWidth="353.64453125" />
+      <!-- Add the first ImageView with the first image inside -->
+      <ImageView fitHeight="99.0" fitWidth="176.0" layoutX="14.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:///C:/Users/alex3/Pictures/java homework/NPic.jpeg" /> <!-- Specify the image file path -->
+         </image>
+      </ImageView>
+      <Label layoutX="239.0" layoutY="107.0" prefHeight="20.0" prefWidth="154.0" text="Booking Appointments" textFill="#2ab43c">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <!-- Add the second ImageView with the new image inside -->
+      <ImageView fitHeight="107.0" fitWidth="162.0" layoutX="232.0" layoutY="129.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:///C:/Users/alex3/Pictures/java homework/NPic3.jpeg" /> <!-- Specify the new image file path -->
+         </image>
+      </ImageView>
+      <!-- Add the third ImageView with another new image inside -->
+      <ImageView fitHeight="150.0" fitWidth="176.0" layoutX="415.0" layoutY="126.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:///C:/Users/alex3/Pictures/java homework/NPic4.jpeg" /> <!-- Specify the third image file path -->
+         </image>
+      </ImageView>
+      <Label layoutX="473.0" layoutY="107.0" prefHeight="20.0" prefWidth="59.0" text="Pricing" textFill="#2ab43c">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="openWebsiteButton" layoutX="222.0" layoutY="302.0" mnemonicParsing="false" onAction="#openWebsite" onMouseClicked="#openWebsite" prefHeight="46.0" prefWidth="154.0" text="Go to Website" textFill="#3734ff">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="backToMainMenuButton" layoutX="27.0" layoutY="302.0" mnemonicParsing="false" onAction="#handleBackToMainMenu" onMouseClicked="#handleBackToMainMenu" prefHeight="46.0" prefWidth="149.0" text="Back to Main Menu" textFill="#005114">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -4,11 +4,11 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.media.MediaView?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.LegPressesController">
    <children>
-      <MediaView fx:id="mediaView" fitHeight="200.0" fitWidth="200.0" layoutX="190.0" layoutY="32.0" />
+      <MediaView fx:id="mediaView" fitHeight="250.0" fitWidth="510.0" layoutX="43.0" layoutY="14.0" />
       <Button fx:id="PauseButton" layoutX="101.0" layoutY="292.0" mnemonicParsing="false" onMouseClicked="#pauseMedia" text="Pause Video" />
-      <Button fx:id="ResetButton" layoutX="328.0" layoutY="292.0" mnemonicParsing="false" onMouseClicked="#resetMedia" text="Reset Video" />
+      <Button fx:id="ResetButton" layoutX="249.0" layoutY="292.0" mnemonicParsing="false" onMouseClicked="#resetMedia" text="Reset Video" />
+      <Button fx:id="goBackButton" layoutX="397.0" layoutY="292.0" mnemonicParsing="false" onAction="#handleGoBack" onMouseClicked="#handleGoBack" text="Go Back" textFill="#2e40ff" />
    </children>
 </AnchorPane>

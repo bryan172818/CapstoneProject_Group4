@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.LoginController">
+   <children>
+      <Label layoutX="207.0" layoutY="31.0" text="Weekly Routine:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="87.0" layoutY="94.0" text="Friday" />
+      <TextArea layoutX="29.0" layoutY="126.0" prefHeight="200.0" prefWidth="200.0" text="Bicep curls 4 sets x 12 reps,&#10;Tricep dips 4 sets x 8 reps,&#10;Hammer curls 4 sets x 11 reps,&#10;Tricep pushdowns 4 sets x 10 reps&#10;&#10;Take a 30 second rest in between &#10;sets." />
+      <Button fx:id="backToWorkoutPlansButton" layoutX="489.0" layoutY="345.0" mnemonicParsing="false" onAction="#handleBackToWorkoutPlansButton" onMouseClicked="#handleBackToWorkoutPlansButton" text="Go Back" textFill="#6f4ff2" />
+   </children>
+</AnchorPane>

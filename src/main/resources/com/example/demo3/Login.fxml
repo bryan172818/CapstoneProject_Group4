@@ -5,16 +5,26 @@
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
-   <left>
-      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="402.0" BorderPane.alignment="CENTER">
          <children>
-            <Label layoutX="14.0" layoutY="79.0" prefHeight="27.0" prefWidth="181.0" text="Farmingdale Fitness" textFill="#2ec45b">
+            <Label layoutX="185.0" layoutY="36.0" text="Login" textFill="#44ff82" underline="true">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="43.0" layoutY="87.0" text="Username" textOverrun="CLIP">
                <font>
                   <Font size="18.0" />
                </font>
@@ -22,32 +32,60 @@
                   <Glow />
                </effect>
             </Label>
-            <Line endX="100.0" layoutX="100.0" layoutY="126.0" startX="-100.0" />
-         </children>
-      </AnchorPane>
-   </left>
-   <right>
-      <AnchorPane prefHeight="400.0" prefWidth="402.0" BorderPane.alignment="CENTER">
-         <children>
-            <Label layoutX="185.0" layoutY="36.0" text="Login">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Label>
-            <Label layoutX="43.0" layoutY="87.0" text="Username">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Label>
             <TextField fx:id="usernameField" layoutX="148.0" layoutY="88.0" promptText="username" />
             <Label layoutX="45.0" layoutY="186.0" text="Password">
                <font>
                   <Font size="18.0" />
                </font>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
             </Label>
             <PasswordField fx:id="passwordField" layoutX="149.0" layoutY="187.0" promptText="password" />
-            <Button fx:id="login_button" layoutX="161.0" layoutY="257.0" mnemonicParsing="false" onMouseClicked="#onLoginButtonClick" prefHeight="26.0" prefWidth="122.0" text="Login" />
-            <Button fx:id="cancelButton" layoutX="161.0" layoutY="315.0" mnemonicParsing="false" onMousePressed="#OnClickMecancelbuttonClick" prefHeight="26.0" prefWidth="121.0" text="Cancel" />
-         </children></AnchorPane>
+            <Button fx:id="login_button" layoutX="161.0" layoutY="280.0" mnemonicParsing="false" onAction="#onLoginButtonClick" onMouseClicked="#onLoginButtonClick" prefHeight="26.0" prefWidth="122.0" text="Login" />
+            <Button fx:id="cancelButton" layoutX="-1.0" layoutY="306.0" mnemonicParsing="false" onMousePressed="#OnClickMecancelbuttonClick" prefHeight="26.0" prefWidth="121.0" text="Cancel" />
+            <Button fx:id="newUserButton" layoutX="162.0" layoutY="333.0" onAction="#onNewUserButtonClick" onMouseClicked="#onNewUserButtonClick" prefHeight="26.0" prefWidth="122.0" text="New Users" />
+            <Label layoutX="23.0" layoutY="284.0" text="Close Session:" />
+           
+         </children>
+      </AnchorPane>
    </right>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="10.0" layoutY="76.0" prefHeight="27.0" prefWidth="181.0" text="Farmingdale Fitness" textFill="#22d457">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </Label>
+            <Line endX="100.0" layoutX="100.0" layoutY="126.0" startX="-100.0" />
+            <!-- Add the ImageView with the image file path -->
+            
+           <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="1.0" layoutY="141.0" pickOnBounds="true" preserveRatio="true">
+    <image>
+        <Image url="file:///C:/Users/alex3/Pictures/java homework/Farmingdale.jpg" /> <!-- Specify the image file path with correct URL attribute -->
+    </image>
+</ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutY="246.0" pickOnBounds="true" preserveRatio="true" />
+           
+            <!-- Second ImageView -->
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutY="246.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="file:///C:/Users/alex3/Pictures/java homework/Gym.jpg" /> <!-- Specify the new image file path -->
+                </image>
+            </ImageView>
+            
+         </children>
+      </AnchorPane>
+   </center>
 </BorderPane>
